@@ -5,7 +5,7 @@ public class Palindrome {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Please provide an input: ");
-        String input = scan.nextLine().toLowerCase();
+        String input = scan.nextLine().toLowerCase().replaceAll("\\s", "");
         scan.close();
 
         StringBuilder sb = new StringBuilder(input).reverse();
